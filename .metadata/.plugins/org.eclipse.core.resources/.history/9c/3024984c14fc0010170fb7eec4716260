@@ -1,0 +1,24 @@
+package com.java.programs;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Startwith2 {
+
+	public static void main(String[] args) {
+		List <String> nums=Arrays.asList("33", "22", "44", "35", "29", "20");
+		List<Integer> collect = nums.stream().map(i-> Integer.parseInt(i))
+				.filter(i ->{int n = Math.ab(i);
+								while(n>=10) {
+									n = n/10;
+									}
+								return n==2;
+								}
+								
+				.collect(Collectors.toList());
+		
+		
+		System.out.println(collect);
+ 	}
+}

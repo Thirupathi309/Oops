@@ -1,0 +1,13 @@
+package com.java.programs;
+
+import java.util.*;
+
+public class Startwith2 {
+
+	public static void main(String[] args) {
+		List <Integer> nums=Arrays.asList(33, 22, 44, 35, 29, 20);
+		
+		nums.stream().map(i-> String.valueOf(i)).filter(i->i.startsWith("2")).forEach(n -> System.out.println(n));
+		
+ 	}
+}
